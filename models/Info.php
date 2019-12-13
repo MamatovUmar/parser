@@ -36,7 +36,7 @@ class Info extends \yii\db\ActiveRecord
     {
         return [
             [['nameRu', 'iinBin', 'totalArrear', 'totalTaxArrear', 'pensionContributionArrear', 'socialContributionArrear', 'socialHealthInsuranceArrear'], 'required'],
-            [['iinBin', 'sendTime'], 'integer'],
+            [['sendTime', 'iinBin'], 'integer'],
             [['totalArrear', 'totalTaxArrear', 'pensionContributionArrear', 'socialContributionArrear', 'socialHealthInsuranceArrear'], 'number'],
             [['taxOrgInfo'], 'string'],
             [['nameRu'], 'string', 'max' => 255],

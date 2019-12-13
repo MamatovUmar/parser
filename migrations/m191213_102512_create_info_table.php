@@ -15,13 +15,13 @@ class m191213_102512_create_info_table extends Migration
         $this->createTable('{{%info}}', [
             'id' => $this->primaryKey(),
             'nameRu' => $this->string()->notNull(),
-            'iinBin' => $this->integer()->notNull(),
+            'iinBin' => $this->bigInteger()->notNull(),
             'totalArrear' => $this->decimal(10, 2)->notNull(),
             'totalTaxArrear' => $this->decimal(10, 2)->notNull(),
             'pensionContributionArrear' => $this->decimal(10, 2)->notNull(),
             'socialContributionArrear' => $this->decimal(10, 2)->notNull(),
             'socialHealthInsuranceArrear' => $this->decimal(10, 2)->notNull(),
-            'sendTime' => $this->integer(),
+            'sendTime' => $this->bigInteger(),
             'taxOrgInfo' => $this->text(),
 
         ]);
